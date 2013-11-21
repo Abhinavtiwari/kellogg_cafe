@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h1>Item #<%= @menu.id %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Availability</dt>
+  <dd><%= @menu.availability %></dd>
+
+  <dt>Item name</dt>
+  <dd><%= @menu.item_name %></dd>
+
+  <dt>Item category</dt>
+  <dd><%= @menu.item_category %></dd>
+
+  <dt>Item picture</dt>
+  <dd><%= image_tag @menu.item_picture, width:200, class: "img-square" %></dd>
+  
+
+  <dt>Item price</dt>
+  <dd><%= @menu.item_price %></dd>
+
+  <dt>Item description</dt>
+  <dd><%= @menu.item_description %></dd>
+
+</dl>
