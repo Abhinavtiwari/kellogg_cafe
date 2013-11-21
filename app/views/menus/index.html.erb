@@ -25,7 +25,7 @@
         <td><%= menu.availability %></td>
         <td><%= menu.item_name %></td>
         <td><%= menu.item_category %></td>
-        <td><%= image_tag menu.item_picture, width:80, class: "img-square" %></td>
+        <td><%= image_tag menu.item_picture.to_s, width:80, class: "img-square" %></td>
         <td><%= menu.item_price %></td>
         <td><%= menu.item_description %></td>
         <td><%= link_to '<i class="fa fa-search-plus"></i>'.html_safe, menu_url(menu), class: 'btn btn-primary' %></td>
