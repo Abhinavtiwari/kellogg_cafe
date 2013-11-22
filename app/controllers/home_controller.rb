@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def menu
-    @menu = Menu.all
+    @menu = Menu.order(:item_category).all
   end
 
 

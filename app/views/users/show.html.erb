@@ -1,8 +1,12 @@
 <div class="page-header">
-  <h1>User #<%= @user.id %></h1>
+  <h1>User #<%= @user.id %> Profile</h1>
 </div>
 
 <dl class="dl-horizontal">
+  
+
+  <dd><%= image_tag @user.picture, width:200, class: "img-circle" %></dd>
+
   <dt>First name</dt>
   <dd><%= @user.first_name %></dd>
 
@@ -15,7 +19,5 @@
   <dt>Password</dt>
   <dd><%= @user.password %></dd>
 
-  <dt>Picture</dt>
-  <dd><%= @user.picture %></dd>
 
 </dl>

@@ -2,7 +2,7 @@
   <h1>Editing Menu #<%= @menu.id %></h1>
 </div>
 
-<%= form_tag(menu_url(@menu), method: 'patch', class: 'form-horizontal') do %>
+<%= form_tag(menu_url(@menu), method: 'patch', class: 'form-horizontal', multipart: true) do %>
   <div class="form-group">
     <%= label_tag :availability, nil, class: 'col-md-2 control-label' %>
     <div class="col-md-6">

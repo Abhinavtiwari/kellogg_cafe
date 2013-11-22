@@ -10,7 +10,6 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Email</th>
-      <th>Password</th>
       <th>Picture</th>
       <th></th>
       <th></th>
@@ -24,7 +23,6 @@
         <td><%= user.first_name %></td>
         <td><%= user.last_name %></td>
         <td><%= user.email %></td>
-        <td><%= user.password %></td>
         <td><%= image_tag user.picture, width:40, class: "img-circle" %></td>
         <td><%= link_to '<i class="fa fa-search-plus"></i>'.html_safe, user_url(user), class: 'btn btn-primary' %></td>
         <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_user_url(user), class: 'btn btn-warning' %></td>
